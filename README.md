@@ -4,24 +4,24 @@ Hello there! This is a Dental Center Management system for ENTNT built with Reac
 
 ## 🔗 Live Demo
 
-[View Deployed App on Netlify](https://entnt-dental-portal.netlify.app/)
+Live Site: https://entntdentaldashboard.netlify.app
 
 ## 📂 GitHub Repository
 
-[View Source Code on GitHub](https://github.com/Harsha0987/ENTNT-dental-center-management--vharsha101-gmail.com-.git)
+GitHub Repo: https://github.com/Harsha0987/ENTNT-dental-center-management--vharsha101-gmail.com-.git
 
 ## ✨ Features
 
-✅ User Authentication (Admin & Patient)  
-✅ Session persistence via localStorage  
-✅ Role-based access control  
-✅ Dashboard with KPIs  
-✅ Patient management (Admin-only)  
-✅ Appointment management (Admin-only)  
-✅ Calendar view (Admin-only)  
-✅ Patient portal with their own appointments and treatment history  
-✅ File upload with preview (base64)  
-✅ Responsive design
+- User Authentication (Admin & Patient)  
+- Session persistence via localStorage  
+- Role-based access control  
+- Dashboard with KPIs  
+- Patient management (Admin-only)  
+- Appointment management (Admin-only)  
+- Calendar view (Admin-only)  
+- Patient portal with their own appointments and treatment history  
+- File upload with preview (base64)  
+- Responsive design
 
 ##  User Roles & Pages
 
