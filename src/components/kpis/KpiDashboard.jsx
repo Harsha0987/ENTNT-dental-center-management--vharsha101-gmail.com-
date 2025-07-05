@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
-
 const KpiDashboard = () => {
   const [aps, setAps] = useState([]);
   const [pts, setPts] = useState([]);
 
-const rev = aps.reduce((s, x) => s + Number(x.cost || 0), 0);
+  const rev = aps.reduce((s, x) => s + Number(x.cost || 0), 0);
   const pend = aps.filter((x) => x.status === 'Pending').length;
   const comp = aps.filter((x) => x.status === 'Completed').length;
 
@@ -15,13 +14,6 @@ const rev = aps.reduce((s, x) => s + Number(x.cost || 0), 0);
     setAps(a);
     setPts(p);
   }, []);
-
-  const nxtAps = aps
-    .filter((x) => new Date(x.appointmentDate) >= new Date())
-    .sort((x, y) => new Date(x.appointmentDate) - new Date(y.appointmentDate))
-    .slice(0, 10);
-
-  
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
@@ -44,4 +36,5 @@ const rev = aps.reduce((s, x) => s + Number(x.cost || 0), 0);
     </div>
   );
 };
+
 export default KpiDashboard;

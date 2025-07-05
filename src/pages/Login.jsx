@@ -6,7 +6,7 @@ import { UserContext } from '../contexts/UserContext';
 function Auth() {
   const loc = useLocation();
   const [adm, setAdm] = useState(loc.state && loc.state.showPatient ? false : true);
-  const [load, setLoad] = useState(false);
+  const [load] = useState(false); // fixed here: removed unused setLoad
   const [aE, setAE] = useState('');
   const [aP, setAP] = useState('');
   const [pE, setPE] = useState('');

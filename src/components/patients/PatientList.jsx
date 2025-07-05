@@ -32,13 +32,6 @@ const confDel = () => {
 
   
 
-  const onDel = (id) => {
-    setDelId(id);
-    setShowDel(true);
-  };
-
-  
-
   const onSubmit = (pt) => {
     if (editPt) {
       updatePatient(pt);
