@@ -57,26 +57,30 @@ Hello there! This is a Dental Center Management system for ENTNT built with Reac
 - LocalStorage (for simulating data persistence)
 
 ## 🏗️ Project Structure
+
+```plaintext
 src/
 ├── components/
-│   ├── KPIs.js             // KPI widgets for admin dashboard
-│   ├── PatientList.js      // List, add, edit, delete patients
-│   ├── AppointmentList.js  // Manage patient appointments/incidents
-│   └── CalendarView.js     // Calendar UI to view appointments
+│   ├── KPIs.js                 # KPI widgets for admin dashboard
+│   ├── PatientList.js          # List, add, edit, delete patients
+│   ├── AppointmentList.js      # Manage patient appointments/incidents
+│   └── CalendarView.js         # Calendar UI to view appointments
 │
 ├── contexts/
-│   └── UserContext.js      // Global authentication state for logged-in user session
+│   └── UserContext.js          # Global authentication state for logged-in user session
 │
 ├── pages/
-│   ├── LoginPage.jsx       // Login form for admin and patients
-│   ├── AdminDashboard.jsx  // Full-featured admin dashboard for dentists
-│   └── PatientDashboard.jsx // Limited dashboard for patients to view their records
+│   ├── LoginPage.jsx           # Login form for admin and patients
+│   ├── AdminDashboard.jsx      # Full-featured admin dashboard for dentists
+│   └── PatientDashboard.jsx    # Limited dashboard for patients to view their records
 │
 ├── utils/
-│   └── storage.js          // Utility functions for reading/writing localStorage
+│   └── storage.js              # Utility functions for reading/writing localStorage
 │
-├── App.js                  // Main app component, defines routes with React Router
-└── index.js                // Entry point of the React app, renders App.js
+├── App.js                      # Main app component, defines routes with React Router
+└── index.js                    # Entry point of the React app, renders App.js
+```
+
 
 
 
@@ -112,6 +116,14 @@ The app is deployed on Netlify. You can deploy it yourself by linking your GitHu
 - All CRUD operations (add, edit, delete patients/appointments) read/write to `localStorage`.
 - Data updates trigger UI re-render via state and context updates.
 - App uses React Router for page-based routing (login, dashboards).
+
+## 🚚 How to Deploy on Netlify
+
+- Push your code to GitHub.
+- Go to Netlify and connect your repository.
+- Set build command as npm run build and publish directory as build/.
+- Click Deploy and wait for the build to finish.
+- Share your live URL!
 
 ## 📝 Technical Decisions
 
