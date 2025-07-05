@@ -4,11 +4,11 @@ Hello there! This is a Dental Center Management system for ENTNT built with Reac
 
 ## 🔗 Live Demo
 
-[View Deployed App on Netlify](https://your-netlify-link-here.netlify.app)
+[View Deployed App on Netlify](https://entnt-dental-portal.netlify.app/)
 
 ## 📂 GitHub Repository
 
-[View Source Code on GitHub](https://github.com/your-github-username/dental-center-management)
+[View Source Code on GitHub](https://github.com/Harsha0987/ENTNT-dental-center-management--vharsha101-gmail.com-.git)
 
 ## ✨ Features
 
@@ -58,12 +58,26 @@ Hello there! This is a Dental Center Management system for ENTNT built with Reac
 
 ## 🏗️ Project Structure
 src/
-components/ Reusable components (KPIs, PatientList, etc.)
-contexts/  UserContext for global auth state
-pages/ Different pages: Login, AdminDashboard, PatientDashboard, etc.
-utils/ Utility functions for data management
-App.js
-index.js
+├── components/
+│   ├── KPIs.js             // KPI widgets for admin dashboard
+│   ├── PatientList.js      // List, add, edit, delete patients
+│   ├── AppointmentList.js  // Manage patient appointments/incidents
+│   └── CalendarView.js     // Calendar UI to view appointments
+│
+├── contexts/
+│   └── UserContext.js      // Global authentication state for logged-in user session
+│
+├── pages/
+│   ├── LoginPage.jsx       // Login form for admin and patients
+│   ├── AdminDashboard.jsx  // Full-featured admin dashboard for dentists
+│   └── PatientDashboard.jsx // Limited dashboard for patients to view their records
+│
+├── utils/
+│   └── storage.js          // Utility functions for reading/writing localStorage
+│
+├── App.js                  // Main app component, defines routes with React Router
+└── index.js                // Entry point of the React app, renders App.js
+
 
 
 
