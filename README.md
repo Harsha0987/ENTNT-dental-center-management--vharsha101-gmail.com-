@@ -143,5 +143,7 @@ The app is deployed on Netlify. You can deploy it yourself by linking your GitHu
 - Sun/moon switch based on time of day.
 - Visual calendar with clickable days showing appointments.
 
+## 📄 License
+This project is built for ENTNT as part of a technical assignment. No commercial license granted.
 
-by [KOLLA HARSHA VARDHAN] - vharsha101@gmail.com
+## by ## [KOLLA HARSHA VARDHAN] - vharsha101@gmail.com
