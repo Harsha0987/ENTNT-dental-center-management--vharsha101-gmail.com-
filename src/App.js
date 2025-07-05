@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React, { useContext } from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Login from './pages/Login';
+import AdminDashboard from './pages/AdminDashboard';
+import PatientDashboard from './pages/PatientDashboard';
+import { UserContext } from './contexts/UserContext';
+const App = () => {
+  const { user } = useContext(UserContext);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route
+  path="/admin"
+  element={
+    user && user.role === 'Admin' ? (
+      <AdminDashboard />
+    ) : (
+      <Navigate to="/" />
+    )
+  }
+/>
+
+        <Route
+          path="/patient"
+          element={
+            user && user.role === 'Patient' ? (
+              <PatientDashboard />
+            ) : (
+              <Navigate to="/" />
+            )
+          }
+        />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
